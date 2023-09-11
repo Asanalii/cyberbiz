@@ -1,0 +1,57 @@
+@mixin size($width, $height) {
+  width: #{$width};
+  height: #{$height};
+}
+
+.asideBar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  gap: 35px;
+  left: 130px;
+  top: 420px;
+
+  & .asideBar__icon {
+    cursor: pointer;
+    @include size(20px, 20px);
+  }
+}
+
+.ownNavbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 60px;
+  left: 100px;
+  z-index: 100;
+  gap: 75px;
+
+  & .cyberbizLogo {
+    cursor: pointer;
+    @include size(183px, 42px);
+  }
+}
+
+.iconsList {
+  display: flex;
+  gap: 15px;
+
+  & .icon {
+    cursor: pointer;
+    @include size(23px, 23px);
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  color: var(--white-color);
+}
+
+.button-accent {
+  background-color: var(--purple-accent);
+  padding: 10px 50px;
+  font-weight: 500;
+}

@@ -1,0 +1,56 @@
+@import './General.module.scss';
+
+.homeSection {
+  display: flex;
+  position: relative;
+
+  & .vectorSvg,
+  & .vectorSvg2 {
+    position: absolute;
+  }
+
+  & .vectorSvg {
+    bottom: 0;
+  }
+
+  & .vectorSvg2 {
+    right: 0;
+    top: 0;
+  }
+
+  & .pandaImageWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .pandaImg {
+      @include size(759px, 959px);
+    }
+  }
+
+  & .leftSectionBackground,
+  & .rightSectionBackground {
+    flex: 1;
+    height: 100%;
+  }
+
+  & .leftSectionBackground {
+    background: var(--purple-gradient);
+  }
+
+  & .rightSectionBackground {
+    background: var(--white-gradient);
+  }
+
+  & .startContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 115px;
+    width: 100%;
+  }
+}
