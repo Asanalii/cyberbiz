@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+@mixin flexTemplate($direction) {
+  display: flex;
+  flex-direction: #{$direction};
+}
+
 .aboutSection {
   display: flex;
 
@@ -28,8 +33,7 @@
 
   .rightSectionBackground {
     flex: 4;
-    display: flex;
-    flex-direction: column;
+    @include flexTemplate(column);
     justify-content: center;
     align-items: center;
     background: var(--purple-gradient);
@@ -41,19 +45,18 @@
     }
 
     & .aboutInfoWrapper {
-      display: flex;
-      flex-direction: column;
+      @include flexTemplate(column);
 
       width: 65%;
       & .aboutTitle {
         font-size: 84px;
         text-transform: uppercase;
         color: var(--white-color);
-        margin-bottom: 50px;
+        margin-bottom: 45px;
       }
 
       & .aboutInfo {
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Montserrat', sans-serif;
         line-height: 30px;
         text-transform: uppercase;
@@ -66,16 +69,29 @@
 }
 
 .aboutMenu {
-  display: flex;
+  @include flexTemplate(row);
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
   font-weight: 700;
   font-size: 24px;
   color: var(--white-color);
 
   & .aboutMenu__item {
+    cursor: pointer;
     padding-bottom: 6px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--white-color);
+  }
+}
+
+.aboutItems {
+  @include flexTemplate(column);
+  gap: 20px;
+  margin-top: 30px;
+  & .aboutItems__singleItem {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--white-color);
   }
 }

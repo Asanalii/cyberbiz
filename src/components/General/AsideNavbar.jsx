@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as HomeIcon } from '../../assets/icons/home_icon.svg';
 import { ReactComponent as UserIcon } from '../../assets/icons/user_icon.svg';
 import { ReactComponent as HeartPlusIcon } from '../../assets/icons/heart_plus_icon.svg';

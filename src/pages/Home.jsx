@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as PandaImg } from '../assets/images/panda_1.svg';
 import { ReactComponent as VectorSvg } from '../assets/images/vector_home.svg';
 import { ReactComponent as VectorSvg2 } from '../assets/images/vector_home2.svg';

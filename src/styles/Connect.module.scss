@@ -1,0 +1,35 @@
+@import './About.module.scss';
+.connectSection {
+  background: var(--purple-gradient);
+  @include flexTemplate(row);
+  align-items: center;
+  justify-content: center;
+
+  & .connectFormWrapper {
+    @include flexTemplate(column);
+    width: 65%;
+
+    & .connectForm__title {
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: var(--white-color);
+      margin-bottom: 55px;
+    }
+
+    & .connectForm__inputContainer {
+      @include flexTemplate(column);
+      gap: 15px;
+      & .inputRow {
+        @include flexTemplate(row);
+        gap: 15px;
+      }
+    }
+
+    & .connectFormSubmitContainer {
+      margin-top: 18px;
+    }
+  }
+}

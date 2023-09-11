@@ -1,0 +1,66 @@
+@import './About.module.scss';
+
+.servicesSection {
+  background: var(--purple-gradient);
+  position: relative;
+  @include flexTemplate(row);
+  justify-content: center;
+  align-items: center;
+
+  & .servicesWrapper {
+    width: 68%;
+    & .servicesList {
+      margin-top: 60px;
+      @include flexTemplate(row);
+      gap: 70px;
+      & .serviceItem {
+        color: var(--white-color);
+        @include flexTemplate(column);
+        gap: 20px;
+        background: rgba(35, 19, 115, 0.48);
+        border-radius: 40px;
+        padding: 60px 25px 100px 25px;
+        box-shadow: 0px 19px 36px 0px rgba(0, 0, 0, 0.25);
+
+        & .serviceItem__title {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 30px;
+        }
+
+        & .serviceItem__content {
+          max-width: 80%;
+          font-weight: 500;
+          line-height: 15px;
+          font-size: 11px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    & .servicesTitle {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 49px;
+      color: var(--white-color);
+      line-height: 57px;
+    }
+  }
+  & .vectorServicesSvg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  & .vectorServicesSvg2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  & .vectorServicesSvg3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

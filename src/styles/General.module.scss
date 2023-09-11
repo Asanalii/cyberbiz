@@ -55,3 +55,32 @@
   padding: 10px 50px;
   font-weight: 500;
 }
+
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+}
+
+.input,
+.textArea {
+  border: 1px solid var(--white-color);
+  background-color: transparent;
+  padding: 12px 0 12px 45px;
+  outline: none;
+  color: var(--white-color);
+  width: 100%;
+  font-size: 25px;
+  line-height: 22px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.textArea {
+  padding-top: 50px;
+  resize: none;
+}
+
+.input::placeholder,
+.textArea::placeholder {
+  color: var(--white-color);
+}

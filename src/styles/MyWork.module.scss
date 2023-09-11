@@ -1,0 +1,41 @@
+.myWorkSection {
+  background: var(--purple-gradient);
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  & .myWorkWrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+    .myWorkTitle {
+      text-transform: uppercase;
+      color: var(--white-color);
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 57.53px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .deviceFrame {
+      z-index: 99;
+    }
+
+    .deviceFrameShadow {
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+    }
+  }
+  & .vectorMyWorkSvg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  & .vectorMyWorkSvg2 {
+    position: absolute;
+    right: 0;
+  }
+}

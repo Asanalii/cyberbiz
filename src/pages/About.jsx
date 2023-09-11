@@ -1,10 +1,9 @@
-import React from 'react';
 import styles from '../styles/About.module.scss';
 import { ReactComponent as VectorAboutSvg } from '../assets/images/vector_about.svg';
 import { ReactComponent as VectorAboutSvg2 } from '../assets/images/vector_about2.svg';
 import { ReactComponent as PandaImg } from '../assets/images/panda_1.svg';
-import AboutAccordion from '../components/About/AboutMenu';
 import AboutMenu from '../components/About/AboutMenu';
+import AboutItems from '../components/About/AboutItems';
 
 const About = () => {
   return (
@@ -24,6 +23,7 @@ const About = () => {
             sem gravida lacinia. Nam ullamcorper porta condimentum. Vivamus malesuada nec turpis sit amet lobortis
           </p>
           <AboutMenu />
+          <AboutItems />
         </div>
         <VectorAboutSvg2 className={styles.vectorAboutSvg2} />
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../styles/General.module.scss';
 
 const Button = ({ variant, value, fontSize, p }) => {
