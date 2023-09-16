@@ -1,6 +1,4 @@
 import styles from '../styles/About.module.scss';
-import { ReactComponent as VectorAboutSvg } from '../assets/images/vector_about.svg';
-import { ReactComponent as VectorAboutSvg2 } from '../assets/images/vector_about2.svg';
 import { ReactComponent as PandaImg } from '../assets/images/panda_1.svg';
 import AboutMenu from '../components/About/AboutMenu';
 import AboutItems from '../components/About/AboutItems';
@@ -12,7 +10,6 @@ const About = () => {
         <div className={styles.pandaImageAboutContainer}>
           <PandaImg className={styles.pandaAboutImage} />
         </div>
-        <VectorAboutSvg className={styles.vectorAboutSvg} />
       </div>
       <div className={styles.rightSectionBackground}>
         <div className={styles.aboutInfoWrapper}>
@@ -25,7 +22,6 @@ const About = () => {
           <AboutMenu />
           <AboutItems />
         </div>
-        <VectorAboutSvg2 className={styles.vectorAboutSvg2} />
       </div>
     </section>
   );

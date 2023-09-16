@@ -29,6 +29,7 @@
     align-items: center;
     & .pandaImg {
       @include size(759px, 959px);
+      z-index: 90;
     }
   }
 
@@ -51,6 +52,7 @@
     display: flex;
     justify-content: center;
     bottom: 115px;
+    z-index: 99;
     width: 100%;
   }
 }

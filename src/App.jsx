@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import MyWork from './pages/MyWork';
 import Connect from './pages/Connect';
+import ParticlesContainer from './components/Particles/ParticlesContainer';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className="mainWrapper">
         <Navbar />
         <AsideNavbar />
+        <ParticlesContainer colorOfParticles={'#731bc1'} colorOfLinks={'#ffffff'} />
         <Home />
         <About />
         <Services />

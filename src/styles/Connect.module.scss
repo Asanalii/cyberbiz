@@ -8,7 +8,7 @@
   & .connectFormWrapper {
     @include flexTemplate(column);
     width: 65%;
-
+    z-index: 99;
     & .connectForm__title {
       font-size: 55px;
       font-weight: 600;
