@@ -5,21 +5,9 @@ import styles from '../../styles/General.module.scss';
 const Navbar = ({ isLeftDirection }) => {
   /* eslint-disable indent */
   return (
-    <nav
-      aria-label="primary-navigation"
-      style={
-        isLeftDirection
-          ? {
-              left: '100px',
-            }
-          : {
-              right: '100px',
-            }
-      }
-      className={styles.ownNavbar}
-    >
-      <CyberbizLogo className={styles.cyberbizLogo} />
-      <IconsContainer />
+    <nav aria-label="primary-navigation" className={styles.ownNavbar}>
+      <CyberbizLogo className={isLeftDirection ? styles.cyberbizLogo__white : styles.cyberbizLogo__purple} />
+      <IconsContainer isLeftDireciton={isLeftDirection} />
     </nav>
     /* eslint-enable indent */
   );

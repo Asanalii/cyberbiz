@@ -29,18 +29,32 @@
   display: flex;
   align-items: center;
   top: 60px;
+  left: 100px;
   z-index: 100;
   gap: 75px;
 
-  & .cyberbizLogo {
+  & .cyberbizLogo__white,
+  & .cyberbizLogo__purple {
     cursor: pointer;
     @include size(183px, 42px);
+  }
+
+  & .cyberbizLogo__purple {
+    path {
+      fill: var(--dark-purple);
+    }
+  }
+  & .cyberbizLogo__white {
+    path {
+      fill: var(--white-color);
+    }
   }
 }
 
 .iconsList {
   display: flex;
   gap: 15px;
+  position: absolute;
 
   & .icon {
     cursor: pointer;

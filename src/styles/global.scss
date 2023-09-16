@@ -3,6 +3,7 @@
 $purple-gradient: 'linear-gradient(180deg, #231278 0%, #271c54 100%)';
 $white-gradient: 'linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #271C54 100%, #271C54 100%)';
 $purple-accent: #731bc1;
+$dark-purple: #231373;
 $white-color: #ffffff;
 
 * {
@@ -29,6 +30,7 @@ section {
   --white-gradient: #{$white-gradient};
   --purple-accent: #{$purple-accent};
   --white-color: #{$white-color};
+  --dark-purple: #{$dark-purple};
 }
 
 .mainContainer {
