@@ -5,9 +5,22 @@ import { ReactComponent as CardsIcon } from '../../assets/icons/cards_icon.svg';
 import { ReactComponent as CartIcon } from '../../assets/icons/shopping_cart_icon.svg';
 import styles from '../../styles/General.module.scss';
 
-const AsideNavbar = () => {
+const AsideNavbar = ({ isLeftDirection }) => {
   return (
-    <aside className={styles.asideBar}>
+    <aside
+      className={styles.asideBar}
+      /*eslint-disable indent */
+      style={
+        isLeftDirection
+          ? {
+              left: '130px',
+            }
+          : {
+              right: '130px',
+            }
+      }
+      /*eslint-enable indent */
+    >
       <HomeIcon className={styles.asideBar__icon} />
       <UserIcon className={styles.asideBar__icon} />
       <HeartPlusIcon className={styles.asideBar__icon} />

@@ -73,7 +73,7 @@ const ParticlesContainer = ({ colorOfLinks, colorOfParticles }) => {
           number: {
             density: {
               enable: true,
-              area: 1400,
+              area: 1500,
             },
             value: 80,
           },

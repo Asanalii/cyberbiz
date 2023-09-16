@@ -6,7 +6,7 @@ const ServicesList = () => {
   return (
     <ul className={styles.servicesList}>
       {servicesMock.map(service => (
-        <ServiceItem title={service.title} content={service.content} />
+        <ServiceItem key={service.title} title={service.title} content={service.content} />
       ))}
     </ul>
   );

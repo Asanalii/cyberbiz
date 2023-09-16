@@ -7,15 +7,17 @@ import Services from './pages/Services';
 import MyWork from './pages/MyWork';
 import Connect from './pages/Connect';
 import ParticlesContainer from './components/Particles/ParticlesContainer';
+import useHomeDirection from './hooks/useHomeDirection';
 
 const App = () => {
+  const isLeftDirection = useHomeDirection();
   return (
     <main className="mainContainer">
       <div className="mainWrapper">
-        <Navbar />
-        <AsideNavbar />
+        <Navbar isLeftDirection={isLeftDirection} />
+        <AsideNavbar isLeftDirection={isLeftDirection} />
         <ParticlesContainer colorOfParticles={'#731bc1'} colorOfLinks={'#ffffff'} />
-        <Home />
+        <Home isLeftDirection={isLeftDirection} />
         <About />
         <Services />
         <MyWork />

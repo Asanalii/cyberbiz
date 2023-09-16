@@ -2,11 +2,11 @@ import { ReactComponent as PandaImg } from '../assets/images/panda_1.svg';
 import styles from '../styles/Home.module.scss';
 import Button from '../components/General/Button';
 
-const Home = () => {
+const Home = ({ isLeftDirection }) => {
   return (
     <section className={styles.homeSection}>
-      <div className={styles.leftSectionBackground}></div>
-      <div className={styles.rightSectionBackground}></div>
+      <div className={isLeftDirection ? styles.leftSectionBackground : styles.rightSectionBackground}></div>
+      <div className={isLeftDirection ? styles.rightSectionBackground : styles.leftSectionBackground}></div>
       <div className={styles.pandaImageWrapper}>
         <PandaImg className={styles.pandaImg} />
       </div>
